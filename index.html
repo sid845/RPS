@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Rocks Papers Scissors</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="heading"> Rocks Papers Scissors</h1>
+    </div>
+    
+    <div class="row" id="playerNames">
+      <form class="navbar-form " id="form" role="name">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Enter you name">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>      
+    </div>
+    
+    <div class="row" id="playerBox">
+      <div class="col-md-1"></div>
+      <!-- player1 -->
+      <div class="col-md-4">
+        <img src="assets/images/rock.jpg" id="rocks1" alt="p1rocks">
+        <img src="assets/images/paper.jpg" id="papers1" alt="p1papers">
+        <img src="assets/images/scissor.jpg" id="scissors1" alt="p1scissors">
+      </div>
+      <!-- winner -->
+      <div class="col-md-2" id="playerWins">
+        <p id="wins">player1</p>
+        <p>Wins</p>
+      </div>
+      <!-- player2 -->
+      <div class="col-md-4">
+        <img src="assets/images/rock.jpg" id="rocks2" alt="rocksp2">
+        <img src="assets/images/paper.jpg" id="papers2" alt="papersp2">
+        <img src="assets/images/scissor.jpg" id="scissors2" alt="scissorsp2">
+      </div>
+    </div>
+    
+    <!-- chatbox -->
+    <div class="row" id="chatbox">
+      <div id="chatArea"></div>
+      <form class="navbar-form navbar-left chat" role="message">
+        <div class="form-group">
+          <input type="text" class="form-control" size="45px">
+        </div>
+        <button type="button" id="send" class="btn btn-danger">Send</button>
+      </form> 
+    </div>    
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+  <script rel="javascript" src="assets/javascript/script.js">
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
